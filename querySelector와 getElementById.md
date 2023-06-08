@@ -1,4 +1,4 @@
-### 1) 파일을 만들지 않고 콘솔을 이용해 바로 현재 페이지에서 javascript 코드 실행 가능
+## 1) 파일을 만들지 않고 콘솔을 이용해 바로 현재 페이지에서 javascript 코드 실행 가능
 ex) 콘솔창에서 alert('Hello, World!'**.length**) 입력하면 경고창으로 **문자열의 길이(개수)** 출력
 
 <br>
@@ -7,7 +7,7 @@ ex) 콘솔창에서 alert('Hello, World!'**.length**) 입력하면 경고창으�
 
 <br>
 
-### 2) 숫자(Number) / 문자열(String)
+## 2) 숫자(Number) / 문자열(String)
 1+1(숫자) == 2 / '1'+'1'(문자) == '11'
 
 <br>
@@ -16,9 +16,9 @@ ex) 콘솔창에서 alert('Hello, World!'**.length**) 입력하면 경고창으�
 
 <br>
 
-### 3) querySelector / getElementById
+## 3) querySelector / getElementById
 
-* #### querySelector
+* ### querySelector
   - seletor의 구체적인 그룹과 일치하는 document인 **첫 번째** 엘리먼트 반환
   - 일치하는 값이 없다면 null 반환 
   - 처리속도 느림
@@ -34,7 +34,7 @@ ex) 콘솔창에서 alert('Hello, World!'**.length**) 입력하면 경고창으�
             });
         }**
 
-* #### getElementById
+* ### getElementById
   - id를 통해 엘리먼트 반환
   - 일치하는 값이 없다면 null 반환
   - 처리속도 빠름
