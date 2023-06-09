@@ -40,4 +40,4 @@ ex) 콘솔창에서 alert('Hello, World!'**.length**) 입력하면 경고창으�
   - 처리속도 빠름
   - 리턴값 : HTMLCollection
   - HTMLCollection : name, id, index번호로 접근 가능
-  - **getElementsClassName**
+  - 그 외 **getElementsByClassName, getElementsByTagName**
