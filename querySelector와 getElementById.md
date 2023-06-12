@@ -39,5 +39,5 @@ ex) 콘솔창에서 alert('Hello, World!'**.length**) 입력하면 경고창으�
   - 일치하는 값이 없다면 null 반환
   - 처리속도 빠름
   - 리턴값 : HTMLCollection
-  - HTMLCollection : name, id, index번호로 접근 가능
+  - HTMLCollection : name, id, index 번호로 접근 가능
   - 그 외 **getElementsByClassName, getElementsByTagName**
