@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            list-style: none;
+        }
+
+        body {
+            background-color: #000;
+        }
+
+        .clear::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+
+        .wrap {
+            width: 90%;
+            max-width: 1200px;
+            padding: 100px 0;
+            margin: 0 auto;
+        }
+
+        .wrap > ul:not(:last-child) {
+            margin-bottom: 500px;
+        }
+
+        .wrap > ul > li:not(:last-child) {
+            margin-bottom: 50px;
+        }
+
+        .box {
+            width: 500px;
+            height: 500px;
+            background-color: #fff;
+        }
+
+        .box.left {
+            float: left;
+        }
+
+        .box.right {
+            float: right;
+        }
+
+
+        .fade_wrap > li {
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .fade_wrap .box {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            opacity: 0;
+            transition: transform ease 2.5s, opacity ease 4s;
+        }
+
+        /*.fade_wrap .box.left {
+            margin-right: auto;
+        }
+
+        .fade_wrap .box.right {
+            margin-left: auto;
+        }*/
+
+        
+        /** fade **/
+        .fade-up {
+            transform: translateY(100%);
+        }
+
+        .fade-down {
+            transform: translateY(-100%);
+        }
+
+        .fade-left {
+            transform: translateX(100%);
+        }
+
+        .fade-right {
+            transform: translateX(-100%);
+        }
+
+        .fadeY.active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .fadeX.active {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <ul class="float_wrap clear">
+            <li class="box left"></li>
+            <li class="box right"></li>
+            <li class="box left"></li>
+            <li class="box right"></li>
+        </ul>
+        <ul class="fade_wrap">
+            <li class="clear">
+                <div class="box left fade-up fadeY"></div>
+            </li>
+            <li class="clear">
+                <div class="box right fade-down fadeY"></div>
+            </li>
+            <li class="clear">
+                <div class="box left fade-right fadeX"></div>
+            </li>
+            <li class="clear">
+                <div class="box right fade-left fadeX"></div>
+            </li>
+            <li class="clear">
+                <div class="box left fade-up fadeY"></div>
+            </li>
+            <li class="clear">
+                <div class="box right fade-down fadeY"></div>
+            </li>
+            <li class="clear">
+                <div class="box left fade-right fadeX"></div>
+            </li>
+            <li class="clear">
+                <div class="box right fade-left fadeX"></div>
+            </li>
+        </ul>
+    </div>
+    <script>
+        function offsetTop(el) {
+            const clientRect = el.getBoundingClientRect();
+            const scr_top = window.scrollY || document.documentElement.scrollTop;
+            return clientRect.top + scr_top;
+        }
+        
+        const fadePosition = document.querySelectorAll('.fade_wrap > li');
+        const relPosition = document.querySelectorAll('.rel_wrap > li');
+
+        window.addEventListener('scroll', function() {
+            const scr_top = window.scrollY || document.documentElement.scrollTop;
+            const win_h = window.innerHeight;
+
+            fadePosition.forEach(function(position) {
+                const fadeBox = position.querySelector('.box');
+
+                if (offsetTop(position) + 200 < scr_top + win_h) {
+                    fadeBox.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
