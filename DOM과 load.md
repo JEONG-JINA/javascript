@@ -1,4 +1,4 @@
-## 📍DOM
+## 📍 DOM
 : Document Object Model<br>
 ➡️ 자바스크립트가 HTML에 대한 정보들(id, class, name, style, innerHTML 등)을 object 자료로 정리한 것
 
@@ -9,7 +9,7 @@
 
 <br>
 
-## 📍DOMContentLoaded
+## 📍 DOMContentLoaded
 : HTML을 다 읽고 실행
 
     document.addEventListener('DOMContentLoaded', function() {});   // 자바스크립트
@@ -18,7 +18,7 @@
     
 <br>
 
-## 📍load
+## 📍 load
 : DOM 뿐만 아니라 이미지, css, js 파일이 로드됐는지 체크
 
     window.addEventListener('load', function() {});   // 자바스크립트
