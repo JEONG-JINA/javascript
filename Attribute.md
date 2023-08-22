@@ -27,4 +27,18 @@
 ## 📍 setAttribute
 : 특정 요소의 속성 값을 변경, 추가
 
-    <img class="image" src="" alt="">
+    <img class="image" src="" alt="이미지 없음">
+    
+    document.querySelector('image').setAttribute('src', '/contents/img/cont1.jpg');
+    // <img class="image" src="/content/img/cont1.jpg" alt="이미지 없음">
+
+    document.querySelector('image').setAttribute('alt', 'cont1 이미지');
+    // <img class="image" src="/content/img/cont1.jpg" alt="cont1 이미지">
+
+
+    [jQuery]
+    $('.image').attr('src', '/content/img/cont1.jpg');
+    // <img class="image" src="/content/img/cont1.jpg" alt="이미지 없음">
+
+    $('.image').attr('alt', 'cont1 이미지');
+    // <img class="image" src="/content/img/cont1.jpg" alt="cont1 이미지">
