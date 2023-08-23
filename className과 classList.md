@@ -23,6 +23,7 @@
       element.classList.toggle('토글 클래스명');
 
 * class 존재 확인
+
       element.classList.contains('확인할 클래스명');  // 존재하면 true, 존재하지 않으면 false 반환
 
 * class 교체
