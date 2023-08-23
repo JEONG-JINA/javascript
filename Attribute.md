@@ -1,4 +1,4 @@
-## 📍 getAttribute
+## 📍 getAttribute()
 : 특정 요소의 속성 이름에 대한 값을 반환
 
     <input id="txtInput" name="content" data-value="hello">
@@ -15,7 +15,7 @@
 
 <br>
 
-## 📍 getAttributeNames
+## 📍 getAttributeNames()
 : 특정 요소의 속성 이름을 배열로 반환 (존재하지 않으면 빈 배열 반환)
 
     <input id="txtInput" name="content" data-value="hello">
@@ -24,7 +24,7 @@
 
 <br>
 
-## 📍 setAttribute
+## 📍 setAttribute()
 : 특정 요소의 속성 값을 변경, 추가
 
     <img class="image" src="" alt="이미지 없음">
