@@ -6,7 +6,7 @@
 <br>
 
 ## 📍 classList
-: class 하나만 조작 가능
+: class 개별적으로 조작 가능
 
 * class 추가 (추가하려는 class가 이미 있다면 중복 추가 X)
 
