@@ -7,8 +7,10 @@
     document.getElementById('txtInput').getAttribute('name');   // content
     document.getElementById('txtInput').getAttribute('data-value');   // hello
 
+###
 
     [jQuery]
+    
     $('#txtInput').attr('id');   // txtInput
     $('#txtInput').attr('name');   // content
     $('#txtInput').attr('data-value');   // hello
@@ -35,8 +37,10 @@
     document.querySelector('image').setAttribute('alt', 'cont1 이미지');
     // <img class="image" src="/content/img/cont1.jpg" alt="cont1 이미지">
 
+###
 
     [jQuery]
+    
     $('.image').attr('src', '/content/img/cont1.jpg');
     // <img class="image" src="/content/img/cont1.jpg" alt="이미지 없음">
 
