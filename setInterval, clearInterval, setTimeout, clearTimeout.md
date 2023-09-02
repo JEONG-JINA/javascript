@@ -22,7 +22,7 @@
 ### cleartimeout()
 : setTimeout 함수 취소
 
-    // 5초 후에 정지
+    // 5초 후에 interval 중단, alert 띄움
     setTimeout(function() {
         clearInterval(timer);
         alert('stop');
