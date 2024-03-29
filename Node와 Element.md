@@ -9,6 +9,8 @@
 * lastChild : 마지막 자식 노드를 찾는다.
 * previousSibling : 형제 노드 중, 이전 노드를 찾는다.
 * nextSibling : 형제 노드 중, 다음 노드를 찾는다.
+* contains() : 노드의 자손인지 아닌지에 대해 boolean 값으로 반환
+* hasChildNodes() : 자식 노드가 있는지 없는지에 대해 boolean 값으로 반환
 
 <br>
 
