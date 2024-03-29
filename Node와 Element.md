@@ -19,8 +19,8 @@
 #### 부모/형제/자식 찾기
 * parentElement : 부모 요소를 찾는다.
 * children : 자식 요소 목록을 **HTMLCollection** 형태로 찾는다.
-* firstElementChildren : 첫번째 자식 요소를 찾는다.
-* lastElementChildren : 마지막 자식 요소를 찾는다.
+* firstElementChild : 첫번째 자식 요소를 찾는다.
+* lastElementChild : 마지막 자식 요소를 찾는다.
 * previousElementSibling : 형제 요소 중, 이전 요소를 찾는다.
 * nextElementSibling : 형제 요소 중, 다음 요소를 찾는다.
 
