@@ -57,5 +57,13 @@
 **5. 랜덤 배열**
 
     const array = ['딸기', '참외', '사과', '배', '바나나'];
+
+    /* 원본 배열까지 변경 */
     const shuffledArray = array.sort(() => Math.rondom() - 0.5);
+    console.log(array);  // 무작위 순서로 랜덤 배열 출력 => shuffledArray와 동일
+    console.log(shuffledArray);  // 무작위 순서로 랜덤 배열 출력
+
+    /* 원본 배열 유지 */
+    const shuffledArray = [...array].sort(() => Math.rondom() - 0.5);
+    console.log(array);  // ['딸기', '참외', '사과', '배', '바나나'] => array 원본 배열 유지
     console.log(shuffledArray);  // 무작위 순서로 랜덤 배열 출력
