@@ -27,14 +27,14 @@
 <br>
 
 ## 📍 setAttribute()
-: 특정 요소의 속성 값을 변경, 추가
+: 특정 요소의 속성 값 변경, 추가
 
     <img class="image" src="" alt="이미지 없음">
     
-    document.querySelector('image').setAttribute('src', '/contents/img/cont1.jpg');
+    document.querySelector('.image').setAttribute('src', '/contents/img/cont1.jpg');
     // <img class="image" src="/content/img/cont1.jpg" alt="이미지 없음">
 
-    document.querySelector('image').setAttribute('alt', 'cont1 이미지');
+    document.querySelector('.image').setAttribute('alt', 'cont1 이미지');
     // <img class="image" src="/content/img/cont1.jpg" alt="cont1 이미지">
 
 ###
@@ -46,3 +46,13 @@
 
     $('.image').attr('alt', 'cont1 이미지');
     // <img class="image" src="/content/img/cont1.jpg" alt="cont1 이미지">
+
+<br>
+
+## 📍 removeAttribute()
+: 특정 요소의 속성 값 제거
+
+    <img class="image" src="" alt="이미지 없음">
+    
+    document.querySelector('.image').removeAttribute('class');
+    // <img src="/content/img/cont1.jpg" alt="이미지 없음">
