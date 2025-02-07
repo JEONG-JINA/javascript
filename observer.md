@@ -1,9 +1,21 @@
 ## 📍 IntersectionObserver
-: 타겟 요소와 상위 요소 또는 타겟 요소와 최상위 document의 viewport가 서로 교차하는 영역이 달라지는 경우
-이를 비동기적으로 감지할 수 있는 수단 제공
+: 브라우저 뷰포트(Viewport)와 설정한 요소(Element)의 교차점을 관찰<br>
+요소가 뷰포트에 포함되는지 포함되지 않는지, 사용자 화면에 지금 보이는 요소인지 아닌지를 구별<br>
+비동기적으로 실행, scroll 같은 이벤트 기반의 요소 관찰에서 발생하는 렌더링 성능이나 이벤트 연속 호출 같은 문제 없이 사용 가능
 
     // IntersectionObserver 생성자는 두 가지의 매개변수를 받음
     const observer = new IntersectionObserver(callback, options);
+
+    const options = {threshold: [0.5]}  // 뷰포트 가시성
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // 요소가 화면에 진입한 경우
+            } else {
+                // 요소가 화면에서 벗어난 경우
+            }
+        });
+    }, options);
 
     // target 관찰 시작
     observer.observe(target);
