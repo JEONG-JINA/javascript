@@ -1,6 +1,10 @@
+const tabList = document.querySelector('.tabList > li');
+const tabConts = document.querySelector('.tabConts > div');
+
+
 tabList.forEach((list, listIdx) => {
     list.addEventListener('click', (e) => {
-        const tabClass = e.target.getAttribute('class');  // dfssfsdf
+        const tabClass = e.target.getAttribute('class');
 
         document.querySelector('.tabList li.on').classList.remove('on');
         e.target.classList.add('on');
