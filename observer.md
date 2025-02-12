@@ -6,16 +6,17 @@
     // IntersectionObserver 생성자는 두 가지의 매개변수를 받음
     const observer = new IntersectionObserver(callback, options);
 
-    const options = {threshold: [0.5]}  // 뷰포트 가시성
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 // 요소가 화면에 진입한 경우
+                entry.target.~
             } else {
                 // 요소가 화면에서 벗어난 경우
+                entry.target.~
             }
         });
-    }, options);
+    }, { threshold: 0.5 }); // 뷰포트 가시성
 
     // target 관찰 시작
     observer.observe(target);
